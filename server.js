@@ -1,4 +1,5 @@
 import express from "express"
+import cors from "cors";
 import { graphqlHTTP } from "express-graphql";
 import { Post as GraphQLPost, Post } from "./src/schema/index.js";
 import graphQlResolvers from "./src/resolvers/index.js";
@@ -6,6 +7,10 @@ import mongoose from "mongoose";
 
 
 const app = express()
+
+app.use(cors())
+
+
 
 app.use("/graphql", graphqlHTTP({
     schema: Post,
