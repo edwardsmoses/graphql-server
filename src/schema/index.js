@@ -1,7 +1,7 @@
 import { buildSchema } from "graphql";
 
 
-const Post = buildSchema(`
+export const Post = buildSchema(`
 """
 A Post refers to available attributes for a Post model
 """
