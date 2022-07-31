@@ -1,4 +1,4 @@
-import { postModel as Post } from "../models/post";
+import { postModel as Post } from "../models/post.js";
 
 
 const posts = async () => {
